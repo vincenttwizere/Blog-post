@@ -1,7 +1,7 @@
 import express from 'express';
 import authMiddleware from '../middleware/authMiddleware.js';
 import requireRole from '../middleware/roleMiddleware.js';
-import * as postController from '../controllers/postController.js';
+import * as postController from '../controller/postController.js';
 
 
 const router = express.Router();

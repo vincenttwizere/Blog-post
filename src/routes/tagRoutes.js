@@ -1,5 +1,5 @@
 import express from 'express';
-import { create, list, update, remove } from '../controllers/tagController.js';
+import { create, list, update, remove } from '../controller/tagController.js';
 import authMiddleware from '../middleware/authMiddleware.js';
 import requireRole from '../middleware/roleMiddleware.js';
 
