@@ -14,4 +14,13 @@ const db = msql.createPool({
 
 });
 
+db.getConnection((err, connection) => {
+  if (err) {
+    console.error('Database connection failed:', err);
+  } else {
+    console.log('Database connected successfully!');
+    connection.release();
+  }
+});
+
 export default db;
