@@ -9,3 +9,6 @@ router.get('/', list);
 router.post('/', authMiddleware, requireRole('admin'), create);
 router.put('/:id', authMiddleware, requireRole('admin'), update);
 router.delete('/:id', authMiddleware, requireRole('admin'), remove);
+
+
+export default router;

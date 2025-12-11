@@ -1,6 +1,4 @@
 import pool from '../config/db.js';
-import { makeSlug } from '../utils/helpers.js';
-
 
 export const listPublished = async (req, res) => {
 try {
